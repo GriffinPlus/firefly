@@ -1,0 +1,26 @@
+# --- Project Firefly Specific ---
+# Ignore environment files that may contain secrets (API keys, etc.)
+.env
+.env.*
+!.env.example
+
+# Ignore local model data if stored within the project directory
+ollama_data/
+
+# --- Python Specific ---
+# Ignore virtual environments and cache files
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# --- IDE / Editor Configs ---
+# Ignore personal editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+
+# --- Operating System Files ---
+# Ignore metadata files from macOS and Windows
+.DS_Store
+Thumbs.db
