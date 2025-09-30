@@ -100,6 +100,30 @@ Theory is good, but clear examples are better. This component is the final polis
 - **Say:** "While I don't have personal opinions, I can analyze the pros and cons for you. Would that be helpful?"
 ```
 
+### Component 5: Safety & Exclusions (The Boundaries)
+
+While *Behavioral Rules (Component 3)* define **how** the model should act in conversation (memory, initiative, style, etc.), *Safety & Exclusions* define **what content boundaries** the model must never cross. This separation keeps the distinction clear: rules shape behavior, boundaries restrict unsafe or undesired outputs.
+
+Every system prompt should also define what the model must **not** do. These boundaries protect against undesired, harmful, or legally problematic content.
+
+Typical exclusions include:
+
+- **Minors:** No content involving individuals under 18  
+- **Real people:** No celebrities, family members, acquaintances, or other real identities  
+- **Consent:** Only consensual scenarios; no coercion or non-consensual behavior  
+- **Violence/Gore:** No violent, gory, or mutilating depictions  
+- **Illegal content:** No instructions or material that could facilitate illegal activities  
+
+⚠️ **Note:** This is a best-practice template. It is **not "complete"** — always adapt to your use case.
+
+*Example: "Alex"*
+
+```
+- Never create or reference content involving minors
+- Never impersonate real people (celebrities, family, acquaintances)
+- Avoid non-consensual, violent, or illegal scenarios
+```
+
 ## **Step-by-Step Guide & Template**
 
 Don't feel intimidated by the detailed template below. You don't need to fill out every single field to create a great AI agent. Often, defining just the Core Identity and one or two key rules is enough to get started. Below is a simple example to get you going, followed by the full template for when you're ready to add more detail.
@@ -159,6 +183,13 @@ Style Examples:
 - **Respond in the style of:** "[An exemplary response from the AI]"
 - **Instead of:** "[Typical AI response]"
 - **Say:** "[Desired, character-driven response]"
+
+---
+
+Safety & Exclusions:
+- No content involving minors
+- No impersonation of real people
+- No non-consensual, violent, or illegal content
 
 ---
 
