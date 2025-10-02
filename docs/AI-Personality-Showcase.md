@@ -25,7 +25,22 @@ This is not a technical "how-to" guide for setting up the Firefly system itself,
 
 To bring these characters to life, you'll need a local AI application. Follow these steps in order:
 
-1.  **Choose Your Application:** First, you need a software that can run local AI models. There are many great options available. We recommend looking into applications like **LM Studio, Ollama, or Jan**. Install your preferred application.
+1.  **Choose Your Application:** First, you need a software that can run local AI models. There are many great options available. We recommend looking into applications like **LM Studio, Ollama, or Jan**.  
+    
+    **Local runtimes & endpoints**
+    - **OpenAI‑compatible (/v1):**
+      - LM Studio (`http://127.0.0.1:1234/v1`)
+      - Jan (`http://127.0.0.1:1337/v1`)  
+      - llama.cpp server (`http://127.0.0.1:8080/v1`)
+      - vLLM (`http://127.0.0.1:8000/v1`)  
+      - Ollama (`http://127.0.0.1:11434/v1`) *(experimental)*
+    - **Native API:**
+      - Ollama (`http://127.0.0.1:11434`)
+  
+    Use the base URL above as your `OPENAI_BASE_URL` / client base.  
+    *Note:* If you hit issues with Ollama’s `/v1`, switch to the native API (no `/v1`).  
+    Install your preferred application/runtime.
+
 
 2.  **Hardware Considerations:** Before you download a model, a quick word on hardware. The performance of these AI models heavily depends on your computer's specifications.
     * **For GPU-accelerated performance (Recommended):** A modern NVIDIA GPU with at least **8 GB of VRAM** is highly recommended for a smooth experience with the ~7B models listed below. More VRAM allows for faster speeds and larger models. If you own a GPU with 12 GB of VRAM or more, you can also try ~14B models and even ~20B models. Usually, the more parameters the better the experience - if processing speed is acceptable.
