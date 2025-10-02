@@ -44,9 +44,9 @@ Follow these steps to get your own instance of Firefly up and running.
     ```
 
 5.  **Download your first AI model:**
-    To get started, you need to pull an LLM. We recommend a good 7B or 8B model for the first run. The following command will download and run the `llama3:8b-instruct` model:
+    To get started, you need to pull an LLM. We recommend a good 7B or 8B model for the first run. The following command will download and run the `llama3.1:8b-instruct` model:
     ```sh
-    docker exec -it ollama ollama run llama3:8b-instruct
+    docker exec -it ollama ollama run llama3.1:8b-instruct
     ```
     This can take a while, depending on your internet connection. Once it's done, you can start chatting in the terminal!
 
