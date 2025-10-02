@@ -1,0 +1,20 @@
+# Default: normalize text and enforce LF in the repo & working tree
+* text=auto eol=lf
+
+# Windows scripts that should use CRLF
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
+
+# PowerShell modules/manifests
+*.psm1 text eol=crlf
+*.psd1 text eol=crlf
+
+# Treat common binaries as binary (no EOL conversion / text diffs)
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
+*.zip  binary
