@@ -7,6 +7,57 @@
 # Ignore local model data if stored within the project directory
 ollama_data/
 
+# --- Visual Studio / .NET ---
+# User- and cache-specific
+.vs/
+*.suo
+*.user
+*.rsuser
+*.userosscache
+*.sln.docstates
+
+# Build & publish outputs
+[Bb]in/
+[Oo]bj/
+[Aa]rtifacts/
+[Tt]est[Rr]esult*/
+[Tt]est[Rr]esults/
+**/publish/
+[Bb]uild[Ll]og.*
+
+# NuGet
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+!**/[Pp]ackages/repositories.config
+# Uncomment if you do NOT want .nupkg files in the repo:
+# *.nupkg
+
+# .NET tooling / analyzer outputs
+project.lock.json
+project.fragment.lock.json
+project.assets.json
+*.CodeAnalysisLog.xml
+*.json.sarif
+StyleCop.Cache
+BenchmarkDotNet.Artifacts/
+
+# ASP.NET / Functions local secrets
+appsettings.*.local.json
+local.settings.json
+# User-specific publish profiles
+*.pubxml.user
+
+# JetBrains / ReSharper / NCrunch (if used)
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.ncrunch*
+_NCrunch_*
+
+# C++ (when included in the solution)
+ipch/
+*.VC.db
+*.VC.VC.opendb
+
 # --- Python Specific ---
 # Ignore virtual environments and cache files
 venv/
@@ -24,3 +75,4 @@ __pycache__/
 # Ignore metadata files from macOS and Windows
 .DS_Store
 Thumbs.db
+Desktop.ini
