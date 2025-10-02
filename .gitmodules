@@ -1,0 +1,4 @@
+[submodule "build.vs"]
+	path = build.vs
+	url = https://github.com/GriffinPlus/build.vs
+	branch = master
