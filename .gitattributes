@@ -11,10 +11,13 @@
 *.psd1 text eol=crlf
 
 # Treat common binaries as binary (no EOL conversion / text diffs)
-*.png  binary
-*.jpg  binary
-*.jpeg binary
 *.gif  binary
 *.ico  binary
+*.jpeg binary
+*.jpg  binary
+*.mov  binary
+*.mp4  binary
 *.pdf  binary
+*.png  binary
+*.webp binary
 *.zip  binary
